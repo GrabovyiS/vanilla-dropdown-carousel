@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 500px;
+  min-height: 500px;
+}
+
+.dropdown-container {
+  margin-bottom: 200px;
+}

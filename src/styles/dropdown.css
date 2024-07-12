@@ -1,0 +1,41 @@
+.dropdown-container {
+  margin: 128px auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown-controller {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    content: '⋮';
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.dropdown-controller,
+.dropdown-item {
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: rgb(14, 14, 79);
+  border: 2px solid black;
+}
+
+.dropdown-item {
+  position: absolute;
+  display: none;
+}
+
+.dropdown-active {
+  .dropdown-item {
+    display: block;
+  }
+}
